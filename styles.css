@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 html,
 body {
   font-family: 'Open Sans', sans-serif;
@@ -14,12 +15,38 @@ body {
   background: #eaf6fc;
   min-height: 55vh;
   padding-top: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .intro p {
-  color: green;
+  margin: 10px 10px;
+  color: #000000;
+  opacity: 60%;
+  word-spacing: 4px;
+  font-family: "Lato", Avenir Roboto;
 }
-
+@media screen and (max-width: 640px) {
+  .intro p {
+    font-size: 0.7em;
+    text-align: right;
+  }
+}
+.intro p:last-child {
+  width: 70%;
+  text-align: left;
+  line-height: 1.7em;
+  letter-spacing: .1em;
+  /* border: 1px solid #000; */
+  padding: 10px;
+   
+}
+.intro a {
+  text-decoration: none;
+  color: #00aeef;
+}
 nav ul {
   text-align: right;
   position: fixed;
