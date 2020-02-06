@@ -14,7 +14,7 @@ body {
   top: 0;
   background: #eaf6fc;
   min-height: 55vh;
-  padding-top: 45vh;
+  padding-top: 15vh;
   display: flex;
   flex-direction: column;
   align-content: center;
