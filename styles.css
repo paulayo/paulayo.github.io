@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  
   text-align: center;
 }
 
@@ -10,7 +12,12 @@ body {
   padding: 0;
 }
 
+#description { 
+  background: #eaf6fc;
+}
+
 .intro {
+  font-family: "Open Sans", sans-serif;
   top: 0;
   background: #eaf6fc;
   min-height: 55vh;
@@ -31,17 +38,18 @@ body {
 @media screen and (max-width: 640px) {
   .intro p {
     font-size: 0.7em;
-    text-align: right;
+    text-align: center;
   }
 }
 .intro p:last-child {
-  width: 70%;
+  font-size: 0.9em;
+  width: 100%;
   text-align: left;
   line-height: 1.7em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   /* border: 1px solid #000; */
   padding: 10px;
-   
+  overflow: hidden;
 }
 .intro a {
   text-decoration: none;
@@ -61,9 +69,10 @@ nav ul li {
   margin-top: 25px;
 }
 
-nav ul li a {
+nav ul li a, a.item {
   color: #008080;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav ul li a:hover {
@@ -109,19 +118,18 @@ nav ul li a:hover {
   width: 200px;
   height: 30px;
   margin: 20px auto 90px;
-   background: #e0ebe8;
+  background: #e0ebe8;
   color: #008080;
   font-weight: bold;
   font-size: 1em;
-  border: 2px solid #90C695;
+  border: 2px solid #90c695;
   border-radius: 4px;
   cursor: pointer;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
-
 .show-all:hover {
-  background: #E4F1FE;
+  background: #e4f1fe;
   color: green;
 }
 
@@ -140,7 +148,7 @@ nav ul li a:hover {
 .contact {
   /*   height:800px; */
   /*   min-height:800px; */
-  background: #C8F7C5;
+  background: #c8f7c5;
   padding-bottom: 160px;
 }
 
@@ -153,7 +161,7 @@ nav ul li a:hover {
   font-weight: bold;
   margin: 0 35px 45px 35px;
   list-style-type: none;
-  border: 2px solid #90C695;
+  border: 2px solid #90c695;
   border-radius: 100%;
   width: 100px;
   height: 100px;
@@ -164,13 +172,13 @@ nav ul li a:hover {
 }
 
 .contact-details:hover {
-  background: #E4F1FE;
+  background: #e4f1fe;
   color: green;
 }
 
 footer {
   padding: 20px;
-  background: #22313F;
+  background: #22313f;
   color: white;
   line-height: 40px;
 }
@@ -184,7 +192,7 @@ footer a {
     min-height:1100px;
   } */
   .contact-details {
-    border: 2px solid #90C695;
+    border: 2px solid #90c695;
     border-radius: 0;
     width: 90px;
     height: 20px;
@@ -193,27 +201,32 @@ footer a {
   }
 }
 
-
-
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: orange;
+  }
+}
