@@ -1,3 +1,8 @@
+// var animation = require('../public/animation.js');
+// var transition = require('../public/transition.js');
+
+
+
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -55,4 +60,6 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
+
+  $('.ui.modal');
 };
