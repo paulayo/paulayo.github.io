@@ -1,13 +1,10 @@
-
-
-
 html,
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   /* line-height */
-  font-weight: 600;
-  font-size: 0.834928349234rem;
+  font-weight: 100;
+  font-size: .8734928349234rem;
   color: #000000;
   
 }
@@ -18,17 +15,29 @@ body {
 }
 .grid { 
   position: relative;
+  /* margin-top: 1px; */
+}
+#in-production{ 
+  background: #ffffff;
+ 
+}
+#in-development { 
+  background: #eaf6fc !important;
 }
 
+#welcome-section, #projects, #contact { 
+  padding-bottom: 5rem !important;
+}
 #description { 
   background: #eaf6fc;
+
 }
 
-.intro {
-  font-family: "Open Sans", sans-serif;
+#welcome-section {
+  font-family: inherit;
   top: 0;
   background: #eaf6fc;
-  min-height: 55vh;
+  /* min-height: 55vh; */
   padding-top: 15vh;
   display: flex;
   flex-direction: column;
@@ -36,30 +45,7 @@ body {
   align-items: center;
 }
 
-.intro p {
-  margin: 10px 10px;
-  color: #000000;
-  opacity: 60%;
-  word-spacing: 4px;
-  font-family: "Lato", Avenir Roboto;
-}
-@media screen and (max-width: 640px) {
-  .intro p {
-    font-size: 0.7em;
-    text-align: center;
-  }
-}
-.intro p:last-child {
-  font-size: 0.9em;
-  width: 100%;
-  text-align: left;
-  line-height: 1.7em;
-  letter-spacing: 0.1em;
-  /* border: 1px solid #000; */
-  padding: 10px;
-  overflow: hidden;
-}
-
+/* Typewriter section  */
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -89,4 +75,8 @@ body {
   50% {
     border-color: orange;
   }
+}
+
+#footer { 
+  background: orange;
 }
