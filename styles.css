@@ -6,7 +6,18 @@ body {
   font-weight: 100;
   font-size: .8734928349234rem;
   color: #000000;
+  line-height: 2;
   
+}
+
+a, p, div
+h1, h2, h3,
+h4, h4, h5, h6, span, 
+footer, i, .icon { 
+  font-family: "Montserrat", sans-serif;
+}
+p { 
+  line-height: 2;
 }
 
 * {
